@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="sendPost()">Send POST</button>
+    <script>
+        function sendPost() {
+            fetch('http://localhost:8000', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', mode: 'no-cors' },
+                body: JSON.stringify({ test: 'value' })
+            }).then(response => response.json()).then(data => console.log('Response:', data));
+        }
+    </script>
+</body>
+</html>

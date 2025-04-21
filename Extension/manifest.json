@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "POST Request Modifier",
+    "version": "1.0",
+    "description": "Intercepts and modifies POST request bodies",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["Main.js"],
+            "run_at": "document_start"
+        }
+        ],
+    "permissions": [
+        "activeTab"
+    ]
+}
