@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POST Request Interceptor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 400px;
+      padding: 16px;
+    }
+    .rule {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 8px;
+      padding: 6px 12px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>POST Request Interceptor</h2>
+    <button id="addRule">Add Rule</button>
+  </div>
+  
+  <div id="rulesList">
+    <!-- Rules will be added here dynamically -->
+  </div>
+  
+  <button id="saveRules">Save Rules</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
